@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+body {
+    background-color: #282828;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+
+}
+
+svg {
+    color: #fff;
+}
+
+.borda {
+    border: 2px solid #433ffc;
+}
+
+.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section2 {
+    width: 90vw;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem;
+}
+
+.text-box {
+    align-items: left;
+    padding: 0rem 2rem;
+}
+
+.text-box p {
+    font-size: 1.2rem;
+    color: #999999;
+    margin: 0;
+}
+
+#logo {
+    max-width: 8rem;
+    padding-top: 2rem;
+}
+
+#player-video {
+    max-width: 25rem;
+    padding: 4rem 0rem 4rem 0rem;
+}
+
+button {
+    background-color: #ff1010;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Open Sans';
+    text-decoration: none;
+    width: 20rem;
+    height: 3.5rem;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover {
+    background-color: #582323;
+    cursor: pointer;
+    border: 1px solid #fff;
+    transition: 1s ease;
+}
+
+.banners-ads {
+    padding: 4rem 0rem 4rem 0rem;
+    max-width: 90vw;
+}
+
+.carrossel {
+    margin: 2rem 0rem;
+    width: 500vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.carrossel-arenas p {
+    font-size: 1rem;
+}
+
+.carrossel-arenas img {
+    width: 65vw;
+}
