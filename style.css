@@ -97,3 +97,39 @@ button:hover {
 .carrossel-arenas img {
     width: 65vw;
 }
+
+.carousel {
+    overflow: hidden;
+    height: 50vh;
+    margin-top: 2rem;
+  }
+  
+  .slides {
+    list-style: none;
+    display: flex;
+    height: 300px;
+    margin: 0;
+
+    padding: 0;
+    transition: transform 1s;
+  }
+
+  .slides h2 {
+    margin: 0.5rem 0rem -0.5rem 0rem;
+  }
+
+  .slides li {
+    padding-right: 2rem;
+  }
+
+  .slides img {
+    width: 65vw;
+    height: 65vw;
+    object-fit: cover;
+  }
+  
+  .slides p {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 18px;
+  }
