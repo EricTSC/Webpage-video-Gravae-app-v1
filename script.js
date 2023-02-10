@@ -1,15 +1,33 @@
-var slideIndex = 0;
-showSlides();
+const controls = document.querySelectorAll(".control");
+let currentItem = 0;
+const items = document.querySelectorAll(".item");
+const maxItems = items.length;
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("carousel");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.transform = "translateX(-" + slideIndex * 100 + "%)";
-  }
-  slideIndex++;
-  if (slideIndex >= slides.length) {
-    slideIndex = 0;
-  }
-  setTimeout(showSlides, 3000); // mudar a imagem a cada 3 segundos
-}
+controls.forEach((control) => {
+  control.addEventListener("click", (e) => {
+    isLeft = e.target.classList.contains("arrow-left");
+
+    if (isLeft) {
+      currentItem -= 1;
+    } else {
+      currentItem += 1;
+    }
+
+    if (currentItem >= maxItems) {
+      currentItem = 0;
+    }
+
+    if (currentItem < 0) {
+      currentItem = maxItems - 1;
+    }
+
+    items.forEach((item) => item.classList.remove("current-item"));
+
+    items[currentItem].scrollIntoView({
+      behavior: "smooth",
+      inline: "center"
+    });
+
+    items[currentItem].classList.add("current-item");
+  });
+});
